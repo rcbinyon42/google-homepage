@@ -11,67 +11,54 @@
     <body>
         <div class="div-container">
             <nav class="nav-container">
-                <ul class="ul-left">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Store</a>
-                    </li>
-                </ul>
-                <ul class="ul-right">
-                    <li>
-                        <a href="#">Gmail</a>
-                    </li>
-                    <li>
-                        <a href="#">Images</a>
-                    </li>
-                    <li>
-                        <a href="#">--G Suite--</a>
-                    </li>
-                    <li> 
-                        <button class="sign-in">Sign In</button>
-                    </li>
-                </ul>
+                <div class="ul-left">
+                    <a href="#">About</a>
+                    <a href="#">Store</a>
+                </div>
+                <div class="ul-right">
+                    <a href="#">Gmail</a>
+                    <a href="#">Images</a>
+                    <img id="gsuite" href="#" src="images/google-apps.png">
+                    <button id="sign-in">Sign in</button>
+                    </div>
             </nav>
             <main>
-                <img src="images/logo.png" alt="google-logo" id="google-logo">
-                <form class="search-bar" name="search">
-                    <input id="search-text" type="text" name="search">
-                    <a href="#"><img src="images/mag.png" id="magnify" alt="magnifying glass"></a>
-                </form>
-                <div class="btn-row">
-                    <button class="btn-one buttons" form="search">Google Search</button>
-                    <button class="btn-two buttons">I'm Feeling Lucky</button>
+                <div id="logo-container">
+                    <img src="images/logo.png" alt="google-logo" id="glogo">
                 </div>
-                <br>
-                <br>
-                <a class="register-vote" href="#">Are you registered to vote for the upcoming 2020 election?</a>
+                <form id="search-form" name="search" action="">
+                    <div id="search-bar-container">
+                        <div id="search-bar-flex">
+                            <div id="magnify-container">
+                                <img src="images/search-icon.svg" alt="magnifying glass icon" id="magnify">
+                            </div>
+                            <div id="search-container">
+                                <input type="search" id="search-bar" name="search-bar">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-row">
+                        <button id="btn-one" class="buttons" type="submit">Google Search</button>
+                        <button id="btn-two" class="buttons" type="submit">I'm Feeling Lucky</button>
+                    </div>
+                </form>
+                <div id="motd">
+                    <a class="register-vote" href="https://vote.gov/">Are you registered to vote for the upcoming 2020 election?</a>
+                </div>
             </main>
-            <nav class="nav-container bottom-nav">
-                <ul class="ul-left">
-                    <li>
-                        <a href="#">Advertising</a>
-                    </li>
-                    <li>
-                        <a href="#">Business</a>
-                    </li>
-                    <li>
-                        <a href="#">How Search works</a>
-                    </li>
-                </ul>
-                <ul class="ul-right">
-                    <li>
-                        <a href="#">Privacy</a>
-                    </li>
-                    <li>
-                        <a href="#">Terms</a>
-                    </li>
-                    <li>
-                        <a href="#">Settings</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="clearfooter"></div>
+            <footer id="footer">
+                <div id="footer-left">
+                    <a href="#">Advertising</a>
+                    <a href="#">Business</a>
+                    <a href="#">How Search works</a>
+                </div>
+                <div id="footer-right">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Settings</a>
+                </div>
+            </footer>
         </div>
     </body>
 </html>
