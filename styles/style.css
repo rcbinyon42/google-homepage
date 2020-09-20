@@ -53,7 +53,7 @@ main {
 }
 
 #glogo {
-    vertical-align: middle;
+    padding-top: 75px;
     height: auto;
     width: auto;
 }
